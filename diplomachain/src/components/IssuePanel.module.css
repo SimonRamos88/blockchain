@@ -1,0 +1,33 @@
+.warning {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--danger);
+  border: 1px solid rgba(240, 96, 112, 0.25);
+  background: rgba(240, 96, 112, 0.06);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.resultBlock {
+  margin-top: 28px;
+}
+
+.idHint {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.copied {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--success);
+  margin-top: 10px;
+  letter-spacing: 0.04em;
+}

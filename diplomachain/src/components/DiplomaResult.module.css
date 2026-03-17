@@ -1,0 +1,93 @@
+.resultCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.resultCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.valid::before {
+  background: var(--success);
+}
+.revoked::before {
+  background: var(--danger);
+}
+.notFound::before {
+  background: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: 20px;
+}
+
+.badgeValid {
+  background: var(--success);
+  color: var(--bg);
+}
+.badgeRevoked {
+  background: var(--danger);
+  color: #fff;
+}
+.badgeInvalid {
+  background: var(--muted);
+  color: var(--text-dim);
+}
+
+.studentName {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.program {
+  font-size: 1rem;
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 20px;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+}
+
+.meta dt {
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.meta dd {
+  color: var(--text);
+  word-break: break-all;
+}
+
+.address {
+  color: var(--text-dim) !important;
+  font-size: 0.72rem !important;
+}
+
+.notFoundMsg {
+  font-family: var(--mono);
+  font-size: 0.84rem;
+  color: var(--text-dim);
+}
