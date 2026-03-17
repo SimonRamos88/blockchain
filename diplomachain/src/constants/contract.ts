@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = "0xBB671f3F5848d7D31B74052D3a621c3107E03622";
+export const CONTRACT_ADDRESS = "0x73A015d0901cFae07a5b6668c92994565f9BF5C0";
 
 export const CONTRACT_ABI = [
   "function issueDiploma(string calldata _studentName, string calldata _program, string calldata _institution) external returns (bytes32)",
